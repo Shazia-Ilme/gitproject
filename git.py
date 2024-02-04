@@ -4,7 +4,6 @@ import matplotlib.pyplot as plt
 
 c = m.connect(host='localhost', user='root', passwd='23786@Ans')
 cursor = c.cursor()
-cursor.execute('drop database if exists yyes')
 cursor.execute('create database yyes')
 cursor.execute('use yyes')
 cursor.execute('create table c19_vaccination(sno integer, city varchar(20), country varchar(20), affected int, vaccinated_1dose int, vaccinated_2dose int)')

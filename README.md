@@ -18,7 +18,7 @@ Features and Description:
    Users can update specific details of records in the database.
    Options include updating city, country, affected count, 1st dose count, and 2nd dose count.
 
-5.Display/Search Details (Option 3):
+5.Display/Search Details (Option 3):  
    Users can display all details or search for details of a specific city based on serial number.
 
 6.Show Graphs (Option 4):
