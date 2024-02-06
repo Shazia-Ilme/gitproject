@@ -10,7 +10,6 @@ cursor.execute('use yyes')
 cursor.execute('create table c19_vaccination(sno integer, city varchar(20), country varchar(20), affected int, vaccinated_1dose int, vaccinated_2dose int)')
 c.commit()
 c.close()
-
 while True:
     print("WELCOME TO THE VACCINATION SURVEY!")
     print("1. add details of affected and vaccinated people")
