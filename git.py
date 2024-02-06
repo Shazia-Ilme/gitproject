@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 
 c = m.connect(host='localhost', user='root', passwd='23786@Ans')
 cursor = c.cursor()
+cursor.execute('drop database if exists yyes')
 cursor.execute('create database yyes')
 cursor.execute('use yyes')
 cursor.execute('create table c19_vaccination(sno integer, city varchar(20), country varchar(20), affected int, vaccinated_1dose int, vaccinated_2dose int)')
@@ -56,7 +57,7 @@ while True:
         elif t == 2:
             country = input("Enter the modified country name: ")
             sno = int(input("Enter the sno of the data to be modified: "))
-            cursor.execute('''update c19_vaccination set country="%s" where sno="%s"''' % (country, sno))
+            cursor.execute('''update c19_vaccination set country="%s" where sno="%d"''' % (country, sno))
             c.commit()
             print("Successfully updated!")
         
