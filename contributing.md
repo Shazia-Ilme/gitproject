@@ -8,6 +8,3 @@ We welcome suggestions for new features. Please open an issue with the label "fe
 Pull Requests<br>
 -Fork the repository and create your branch from main.<br>
 -If you've added code, ensure that your code passes linting and tests.<br>
--Make sure your commit messages are clear and follow the Conventional Commits format.<br>
--Squash your commits into a single, well-documented commit.<br>
--Submit a pull request, providing a detailed description of the changes.<br>
