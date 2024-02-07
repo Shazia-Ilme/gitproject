@@ -5,21 +5,21 @@ The issue was identified in the code where the format specifier was incorrectly 
 
 Description
 -Format Specifier Fix:
-  - The incorrect format specifier `%s` has been changed to `%d` in the affected code. This ensures proper handling of the data type and resolves potential runtime errors.
+The incorrect format specifier `%s` has been changed to `%d` in the affected code. This ensures proper handling of the data type and resolves potential runtime errors.
 
 -Database Drop Addition:
-  - Added the statement `cursor.execute('drop database if exists yyes')` to address a missing database cleanup step. This ensures that the 'yyes' database is dropped if it exists, preventing unintended issues related to database persistence.
+Added the statement `cursor.execute('drop database if exists yyes')` to address a missing database cleanup step. This ensures that the 'yyes' database is dropped if it exists, preventing unintended issues related to database persistence.
 
 Changes Made
-- Modified the format specifier in the affected code from `%s` to `%d`.
-- Added the statement `cursor.execute('drop database if exists yyes')` for proper database cleanup.
+Modified the format specifier in the affected code from `%s` to `%d`.
+Added the statement `cursor.execute('drop database if exists yyes')` for proper database cleanup.
 
 Reasoning
 Format Specifier Fix:
-  - The change was necessary to align the format specifier with the expected data type. This prevents potential bugs and improves the overall robustness of the code.
+The change was necessary to align the format specifier with the expected data type. This prevents potential bugs and improves the overall robustness of the code.
 
 Database Drop Addition:
-  - The database drop statement is critical to ensure that the 'yyes' database is properly cleaned up, preventing unintended side effects or conflicts in subsequent executions.
+The database drop statement is critical to ensure that the 'yyes' database is properly cleaned up, preventing unintended side effects or conflicts in subsequent executions.
 
 Testing
 - The changes have been tested to ensure they do not introduce new issues.
